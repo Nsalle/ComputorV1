@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 13:39:36 by nsalle            #+#    #+#             */
-/*   Updated: 2021/01/15 12:05:33 by nsalle           ###   ########lyon.fr   */
+/*   Updated: 2021/01/15 12:27:33 by nsalle           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,13 @@
 typedef struct		s_expr
 {
     char *expr;
+    int degree1;
+    int degree2;
+    int degree3;
+    int degree0;
+    int discriminant;
 }					t_expr;
+
 typedef struct		s_maths
 {
     t_expr  *left_exp;
